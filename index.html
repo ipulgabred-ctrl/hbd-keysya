@@ -1,8 +1,11 @@
+HBD KEYSYA WINDIA PUTRI — HTML
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
 <title>HBD KEYSYA WINDIA PUTRI</title>
 
 <style>
@@ -16,8 +19,14 @@
   --white:#f7e9ef;
 }
 
-*{box-sizing:border-box}
-html{scroll-behavior:smooth}
+*{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
 body{
   margin:0;
   background:
@@ -102,9 +111,16 @@ p{
 }
 
 @keyframes flowerFloat{
-  0%,100%{transform:translateY(0) rotate(0)}
-  50%{transform:translateY(-15px) rotate(8deg)}
+  0%,100%{
+    transform:translateY(0) rotate(0);
+  }
+
+  50%{
+    transform:translateY(-15px) rotate(8deg);
+  }
 }
+
+/* MUSIC BUTTON */
 
 .music{
   position:fixed;
@@ -120,6 +136,7 @@ p{
   font-size:23px;
   backdrop-filter:blur(10px);
   box-shadow:0 5px 25px #0005;
+  cursor:pointer;
 }
 
 .scroll{
@@ -130,7 +147,8 @@ p{
   letter-spacing:4px;
 }
 
-/* bouquet */
+/* BOUQUET */
+
 .bouquet{
   position:relative;
   width:330px;
@@ -161,11 +179,25 @@ p{
   border-radius:5px;
 }
 
-.stem.a{transform:rotate(-25deg)}
-.stem.b{transform:rotate(-10deg)}
-.stem.c{transform:rotate(5deg)}
-.stem.d{transform:rotate(20deg)}
-.stem.e{transform:rotate(32deg)}
+.stem.a{
+  transform:rotate(-25deg);
+}
+
+.stem.b{
+  transform:rotate(-10deg);
+}
+
+.stem.c{
+  transform:rotate(5deg);
+}
+
+.stem.d{
+  transform:rotate(20deg);
+}
+
+.stem.e{
+  transform:rotate(32deg);
+}
 
 .bloom{
   position:absolute;
@@ -174,17 +206,44 @@ p{
 }
 
 @keyframes bloom{
-  50%{transform:translateY(-8px) scale(1.04)}
+  50%{
+    transform:translateY(-8px) scale(1.04);
+  }
 }
 
-.b1{left:75px;top:150px}
-.b2{left:133px;top:90px;font-size:54px}
-.b3{right:65px;top:160px}
-.b4{left:105px;top:220px}
-.b5{right:40px;top:250px}
-.b6{left:35px;top:225px}
+.b1{
+  left:75px;
+  top:150px;
+}
 
-/* card */
+.b2{
+  left:133px;
+  top:90px;
+  font-size:54px;
+}
+
+.b3{
+  right:65px;
+  top:160px;
+}
+
+.b4{
+  left:105px;
+  top:220px;
+}
+
+.b5{
+  right:40px;
+  top:250px;
+}
+
+.b6{
+  left:35px;
+  top:225px;
+}
+
+/* CARD */
+
 .message-card{
   width:min(90vw,560px);
   margin-top:20px;
@@ -203,79 +262,8 @@ p{
   color:#e0b9c7;
 }
 
-/* memory */
-.memory-wrap{
-  width:min(88vw,430px);
-  height:500px;
-  position:relative;
-  margin-top:15px;
-}
+/* JAR */
 
-.memory-bg{
-  position:absolute;
-  inset:0;
-  border-radius:18px;
-  background:
-    linear-gradient(#170914bb,#170914bb),
-    radial-gradient(circle,#87435e,#301321);
-  filter:blur(7px);
-  transform:scale(1.05);
-}
-
-.polaroid{
-  position:absolute;
-  left:50%;
-  top:50%;
-  transform:translate(-50%,-50%);
-  width:86%;
-  padding:18px 18px 38px;
-  background:#f4eee8;
-  color:#5e4750;
-  box-shadow:0 20px 50px #0008;
-  animation:polaroidIn .7s ease;
-}
-
-.photo{
-  width:100%;
-  height:300px;
-  border-radius:6px;
-  background:
-    linear-gradient(145deg,#d9b8a5,#9c796d 48%,#3f5360);
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff8;
-  font-family:"Cormorant Garamond",serif;
-  font-size:25px;
-  font-style:italic;
-}
-
-.polaroid .caption{
-  font-family:"Cormorant Garamond",serif;
-  font-size:22px;
-  font-style:italic;
-  margin-top:16px;
-}
-
-.close{
-  position:absolute;
-  right:-18px;
-  top:-18px;
-  width:48px;
-  height:48px;
-  border-radius:50%;
-  border:1px solid #ffffff33;
-  background:#5b3c4cdd;
-  color:white;
-  font-size:20px;
-}
-
-@keyframes polaroidIn{
-  from{opacity:0;transform:translate(-50%,-50%) scale(.85)}
-  to{opacity:1;transform:translate(-50%,-50%) scale(1)}
-}
-
-/* jar */
 .jar{
   position:relative;
   width:150px;
@@ -283,7 +271,13 @@ p{
   margin:35px 0 25px;
   border:2px solid #ef9ab877;
   border-radius:16px 16px 35px 35px;
-  background:linear-gradient(90deg,#ffffff0c,#ff9abb18,#ffffff08);
+  background:linear-gradient(
+    90deg,
+    #ffffff0c,
+    #ff9abb18,
+    #ffffff08
+  );
+
   box-shadow:
     inset 12px 0 25px #fff1,
     inset -10px 0 20px #0002,
@@ -313,14 +307,39 @@ p{
   animation:noteFloat 3s ease-in-out infinite;
 }
 
-.n1{left:28px;top:75px}
-.n2{right:25px;top:120px;animation-delay:.5s}
-.n3{left:43px;top:165px;animation-delay:1s}
-.n4{right:32px;top:205px;animation-delay:1.5s}
-.n5{left:25px;top:245px;animation-delay:2s}
+.n1{
+  left:28px;
+  top:75px;
+}
+
+.n2{
+  right:25px;
+  top:120px;
+  animation-delay:.5s;
+}
+
+.n3{
+  left:43px;
+  top:165px;
+  animation-delay:1s;
+}
+
+.n4{
+  right:32px;
+  top:205px;
+  animation-delay:1.5s;
+}
+
+.n5{
+  left:25px;
+  top:245px;
+  animation-delay:2s;
+}
 
 @keyframes noteFloat{
-  50%{transform:translateY(-10px) rotate(5deg)}
+  50%{
+    transform:translateY(-10px) rotate(5deg);
+  }
 }
 
 .jar-btn{
@@ -331,6 +350,7 @@ p{
   color:#e9cad4;
   padding:17px;
   font:inherit;
+  cursor:pointer;
 }
 
 #result{
@@ -343,6 +363,8 @@ p{
   margin-top:18px;
 }
 
+/* FINAL */
+
 .final{
   min-height:80svh;
 }
@@ -353,39 +375,84 @@ p{
 }
 
 @keyframes heart{
-  50%{transform:scale(1.16)}
+  50%{
+    transform:scale(1.16);
+  }
 }
 
-/* floating flowers */
-.f1{left:8%;top:18%;font-size:23px}
-.f2{right:8%;top:30%;font-size:27px;animation-delay:1s}
-.f3{left:18%;top:55%;font-size:19px;animation-delay:2s}
-.f4{right:20%;top:72%;font-size:21px;animation-delay:.5s}
-.f5{left:7%;top:82%;font-size:18px;animation-delay:1.5s}
+/* FLOATING FLOWERS */
+
+.f1{
+  left:8%;
+  top:18%;
+  font-size:23px;
+}
+
+.f2{
+  right:8%;
+  top:30%;
+  font-size:27px;
+  animation-delay:1s;
+}
+
+.f3{
+  left:18%;
+  top:55%;
+  font-size:19px;
+  animation-delay:2s;
+}
+
+.f4{
+  right:20%;
+  top:72%;
+  font-size:21px;
+  animation-delay:.5s;
+}
+
+.f5{
+  left:7%;
+  top:82%;
+  font-size:18px;
+  animation-delay:1.5s;
+}
 
 @media(max-width:500px){
-  h1{font-size:52px}
-  .bouquet{transform:scale(.9);margin-top:-10px;margin-bottom:-20px}
+
+  h1{
+    font-size:52px;
+  }
+
+  .bouquet{
+    transform:scale(.9);
+    margin-top:-10px;
+    margin-bottom:-20px;
+  }
+
 }
 </style>
 </head>
 
 <body>
 
-<!-- floating flowers -->
+<!-- FLOATING FLOWERS -->
+
 <div class="flower f1">🌸</div>
 <div class="flower f2">🌼</div>
 <div class="flower f3">❀</div>
 <div class="flower f4">🌷</div>
 <div class="flower f5">✿</div>
 
-<!-- music -->
+<!-- MUSIC -->
+
 <button class="music" id="music">♫</button>
 
 <!-- OPENING -->
+
 <section>
 
-  <div class="kicker">🌸 With all my heart 🌸</div>
+  <div class="kicker">
+    🌸 With all my heart 🌸
+  </div>
 
   <h1>
     May your life<br>
@@ -404,17 +471,23 @@ p{
     — With love that never runs out 💕 —
   </div>
 
-  <div class="scroll">SCROLL DOWN</div>
+  <div class="scroll">
+    SCROLL DOWN
+  </div>
 
 </section>
 
-
 <!-- DIGITAL BOUQUET -->
+
 <section>
 
-  <div class="kicker">🌸 — MY FIRST GIFT — 🌸</div>
+  <div class="kicker">
+    🌸 — MY FIRST GIFT — 🌸
+  </div>
 
-  <h2>A Digital Bouquet</h2>
+  <h2>
+    A Digital Bouquet
+  </h2>
 
   <p>
     Each flower holds a little message just for you
@@ -440,22 +513,27 @@ p{
   </div>
 
   <div class="message-card">
+
     <div class="quote">
       You are as beautiful as cherry blossoms —
       lovely and bringing joy wherever you go.
     </div>
+
   </div>
 
 </section>
 
 <!-- JAR -->
+
 <section>
 
   <div class="kicker">
     🌸 — FROM MY HEART TO YOURS — 🌸
   </div>
 
-  <h2>Reasons I'm Grateful to Know You</h2>
+  <h2>
+    Reasons I'm Grateful to Know You
+  </h2>
 
   <p>
     Shake the jar and pick a note 🫙
@@ -481,11 +559,13 @@ p{
 
 </section>
 
-
 <!-- FINAL -->
+
 <section class="final">
 
-  <div class="heart">💗</div>
+  <div class="heart">
+    💗
+  </div>
 
   <div class="kicker">
     A little wish for you
@@ -506,7 +586,6 @@ p{
   </div>
 
 </section>
-
 
 <script>
 
@@ -540,13 +619,20 @@ function shakeJar(){
   );
 
   setTimeout(()=>{
-    const i=Math.floor(Math.random()*messages.length);
-    document.getElementById("result").textContent=messages[i];
+
+    const i=Math.floor(
+      Math.random()*messages.length
+    );
+
+    document.getElementById("result")
+      .textContent=messages[i];
+
   },300);
 }
 
 
-/* MUSIC — cinematic birthday piano */
+/* CINEMATIC BIRTHDAY PIANO */
+
 let ctx=null;
 let playing=false;
 let timer=null;
@@ -555,111 +641,314 @@ let musicRunId=0;
 const bpm=68;
 const beat=60/bpm;
 
-/* Happy Birthday melody with cinematic phrasing */
+/*
+  Happy Birthday melody
+  dengan nuansa piano cinematic
+*/
+
 const melody=[
-  [392,1],[392,1],[440,2],
-  [392,2],[523.25,2],[493.88,4],
-  [392,1],[392,1],[440,2],
-  [392,2],[587.33,2],[523.25,4],
-  [392,1],[392,1],[783.99,2],
-  [659.25,2],[523.25,2],[493.88,2],[440,4],
-  [698.46,1],[698.46,1],[659.25,2],
-  [523.25,2],[587.33,2],[523.25,4]
+
+  [392,1],
+  [392,1],
+  [440,2],
+
+  [392,2],
+  [523.25,2],
+  [493.88,4],
+
+  [392,1],
+  [392,1],
+  [440,2],
+
+  [392,2],
+  [587.33,2],
+  [523.25,4],
+
+  [392,1],
+  [392,1],
+  [783.99,2],
+
+  [659.25,2],
+  [523.25,2],
+  [493.88,2],
+  [440,4],
+
+  [698.46,1],
+  [698.46,1],
+  [659.25,2],
+
+  [523.25,2],
+  [587.33,2],
+  [523.25,4]
+
 ];
+
+
+/* CHORD BACKGROUND */
 
 const chords=[
+
   [261.63,329.63,392],
+
   [261.63,329.63,392],
+
   [293.66,369.99,440],
+
   [261.63,329.63,392],
+
   [349.23,440,523.25],
+
   [329.63,392,493.88]
+
 ];
 
-function pianoTone(freq,start,duration,volume=0.045){
+
+/* PIANO SOUND */
+
+function pianoTone(
+  freq,
+  start,
+  duration,
+  volume=0.045
+){
+
   const o1=ctx.createOscillator();
   const o2=ctx.createOscillator();
+
   const g=ctx.createGain();
-  const filter=ctx.createBiquadFilter();
+
+  const filter=
+    ctx.createBiquadFilter();
+
 
   o1.type="triangle";
   o2.type="sine";
+
   o1.frequency.value=freq;
   o2.frequency.value=freq*2;
 
-  filter.type="lowpass";
-  filter.frequency.setValueAtTime(2300,start);
 
-  g.gain.setValueAtTime(0.0001,start);
-  g.gain.exponentialRampToValueAtTime(volume,start+0.018);
-  g.gain.exponentialRampToValueAtTime(volume*0.35,start+duration*0.35);
-  g.gain.exponentialRampToValueAtTime(0.0001,start+duration);
+  filter.type="lowpass";
+
+  filter.frequency.setValueAtTime(
+    2300,
+    start
+  );
+
+
+  /*
+    Piano-like attack
+  */
+
+  g.gain.setValueAtTime(
+    0.0001,
+    start
+  );
+
+  g.gain.exponentialRampToValueAtTime(
+    volume,
+    start+0.018
+  );
+
+  g.gain.exponentialRampToValueAtTime(
+    volume*0.35,
+    start+duration*0.35
+  );
+
+  g.gain.exponentialRampToValueAtTime(
+    0.0001,
+    start+duration
+  );
+
 
   o1.connect(filter);
   o2.connect(filter);
+
   filter.connect(g);
   g.connect(ctx.destination);
 
+
   o1.start(start);
   o2.start(start);
-  o1.stop(start+duration+0.04);
-  o2.stop(start+duration+0.04);
+
+  o1.stop(
+    start+duration+0.04
+  );
+
+  o2.stop(
+    start+duration+0.04
+  );
+
 }
 
-function playCinematic(runId){
-  if(!playing || runId!==musicRunId)return;
 
-  const start=ctx.currentTime+0.08;
+/* CINEMATIC MUSIC */
+
+function playCinematic(runId){
+
+  if(
+    !playing ||
+    runId!==musicRunId
+  ){
+    return;
+  }
+
+
+  const start=
+    ctx.currentTime+0.08;
+
   let t=0;
 
-  // Main birthday melody
-  melody.forEach(([freq,beats])=>{
-    pianoTone(freq,start+t*beat,beats*beat*0.94,0.055);
-    t+=beats;
-  });
 
-  // Warm cinematic chord bed
-  for(let i=0;i<Math.ceil(t/4);i++){
-    const chord=chords[i%chords.length];
-    chord.forEach((freq,j)=>{
-      pianoTone(freq,start+(i*4+j*0.72)*beat,1.8*beat,0.011);
-    });
+  /*
+    Main Happy Birthday melody
+  */
+
+  melody.forEach(
+    ([freq,beats])=>{
+
+      pianoTone(
+        freq,
+        start+t*beat,
+        beats*beat*0.94,
+        0.055
+      );
+
+      t+=beats;
+
+    }
+  );
+
+
+  /*
+    Warm cinematic chord bed
+  */
+
+  for(
+    let i=0;
+    i<Math.ceil(t/4);
+    i++
+  ){
+
+    const chord=
+      chords[i%chords.length];
+
+
+    chord.forEach(
+      (freq,j)=>{
+
+        pianoTone(
+          freq,
+          start+(i*4+j*0.72)*beat,
+          1.8*beat,
+          0.011
+        );
+
+      }
+    );
+
   }
 
-  // Gentle low bass notes for a cinematic feel
-  for(let i=0;i<Math.ceil(t/4);i++){
-    const bass=chords[i%chords.length][0]/2;
-    pianoTone(bass,start+i*4*beat,3.2*beat,0.018);
+
+  /*
+    Soft cinematic bass
+  */
+
+  for(
+    let i=0;
+    i<Math.ceil(t/4);
+    i++
+  ){
+
+    const bass=
+      chords[i%chords.length][0]/2;
+
+
+    pianoTone(
+      bass,
+      start+i*4*beat,
+      3.2*beat,
+      0.018
+    );
+
   }
+
+
+  /*
+    Repeat song
+  */
 
   timer=setTimeout(
     ()=>playCinematic(runId),
     t*beat*1000+1100
   );
+
 }
+
+
+/* START MUSIC */
 
 function musicStart(){
+
   if(!ctx){
-    ctx=new(window.AudioContext||window.webkitAudioContext)();
+
+    ctx=
+      new(
+        window.AudioContext ||
+        window.webkitAudioContext
+      )();
+
   }
-  if(ctx.state==="suspended")ctx.resume();
-  const runId=++musicRunId;
+
+
+  if(
+    ctx.state==="suspended"
+  ){
+    ctx.resume();
+  }
+
+
+  const runId=
+    ++musicRunId;
+
+
   playCinematic(runId);
+
 }
 
-document.getElementById("music").onclick=()=>{
-  playing=!playing;
-  document.getElementById("music").textContent=playing ? "❚❚" : "♫";
 
-  if(playing){
-    musicStart();
-  }else{
-    musicRunId++;
-    clearTimeout(timer);
-  }
-};
+/* MUSIC BUTTON */
+
+document
+  .getElementById("music")
+  .onclick=()=>{
+
+    playing=!playing;
+
+
+    document
+      .getElementById("music")
+      .textContent=
+        playing
+        ? "❚❚"
+        : "♫";
+
+
+    if(playing){
+
+      musicStart();
+
+    }else{
+
+      musicRunId++;
+
+      clearTimeout(timer);
+
+    }
+
+  };
 
 </script>
 
 </body>
-</html>
+  </html>
