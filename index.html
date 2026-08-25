@@ -1,954 +1,260 @@
-HBD KEYSYA WINDIA PUTRI — HTML
-
 <!DOCTYPE html>
 <html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-
-<title>HBD KEYSYA WINDIA PUTRI</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Untuk Keyshya ❤️</title>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Montserrat:wght@300;400;500&display=swap');
-
-:root{
-  --bg:#3a1528;
-  --bg2:#28101e;
-  --pink:#e88cab;
-  --soft:#d6a9b9;
-  --white:#f7e9ef;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-*{
-  box-sizing:border-box;
+body {
+    min-height: 100vh;
+    font-family: Georgia, serif;
+    background:
+        radial-gradient(circle at top, #ffb6c9 0%, transparent 35%),
+        linear-gradient(135deg, #210817, #4b1029, #17040e);
+    color: white;
+    overflow-x: hidden;
 }
 
-html{
-  scroll-behavior:smooth;
+.container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
 }
 
-body{
-  margin:0;
-  background:
-    radial-gradient(circle at 50% 20%,#641c3d55,transparent 34%),
-    linear-gradient(180deg,var(--bg),#321325 60%,var(--bg2));
-  color:var(--white);
-  font-family:Montserrat,sans-serif;
-  font-weight:300;
-  overflow-x:hidden;
+.card {
+    width: 100%;
+    max-width: 430px;
+    padding: 38px 25px;
+    border-radius: 25px;
+    background: rgba(255,255,255,0.09);
+    border: 1px solid rgba(255,255,255,0.2);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
 }
 
-body:after{
-  content:"";
-  position:fixed;
-  inset:0;
-  pointer-events:none;
-  background:radial-gradient(circle at center,#ff8ebd0d,transparent 65%);
-  z-index:50;
+.small {
+    letter-spacing: 4px;
+    font-size: 13px;
+    color: #ffd2df;
+    margin-bottom: 20px;
 }
 
-section{
-  min-height:100svh;
-  position:relative;
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  padding:80px 24px;
-  overflow:hidden;
+h1 {
+    font-size: 48px;
+    color: #fff0f5;
+    margin-bottom: 10px;
 }
 
-.kicker{
-  font-size:12px;
-  letter-spacing:5px;
-  color:#bd91a2;
-  margin-bottom:25px;
+h2 {
+    font-size: 25px;
+    color: #ffb5ca;
+    margin-bottom: 25px;
 }
 
-h1,h2,.script,.quote{
-  font-family:"Cormorant Garamond",serif;
+p {
+    line-height: 1.7;
+    color: #ffeaf1;
 }
 
-h1{
-  font-size:clamp(52px,14vw,78px);
-  line-height:.94;
-  font-weight:300;
-  margin:0;
+button {
+    margin-top: 28px;
+    border: none;
+    padding: 14px 28px;
+    border-radius: 30px;
+    background: #ff7198;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 8px 25px rgba(255,113,152,0.35);
+    transition: 0.3s;
 }
 
-h1 em{
-  color:#ec8fac;
-  font-style:italic;
+button:hover {
+    transform: scale(1.05);
 }
 
-h2{
-  font-size:clamp(38px,10vw,54px);
-  line-height:1;
-  font-weight:400;
-  margin:0 0 25px;
+.letter {
+    display: none;
+    margin-top: 30px;
+    padding: 25px 20px;
+    border-radius: 18px;
+    background: rgba(255,255,255,0.08);
+    text-align: left;
+    animation: muncul 1s ease;
 }
 
-p{
-  max-width:620px;
-  color:#b997a6;
-  line-height:2;
-  font-size:14px;
+.letter h3 {
+    text-align: center;
+    color: #ffb5ca;
+    margin-bottom: 15px;
 }
 
-.script{
-  font-style:italic;
-  color:#d7b2c0;
-  font-size:20px;
+.letter p {
+    font-size: 15px;
 }
 
-.flower{
-  position:absolute;
-  user-select:none;
-  pointer-events:none;
-  filter:drop-shadow(0 4px 8px #0005);
-  animation:flowerFloat 5s ease-in-out infinite;
+.footer {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #ffc6d6;
 }
 
-@keyframes flowerFloat{
-  0%,100%{
-    transform:translateY(0) rotate(0);
-  }
-
-  50%{
-    transform:translateY(-15px) rotate(8deg);
-  }
+.heart {
+    position: fixed;
+    bottom: -30px;
+    font-size: 20px;
+    animation: naik 6s linear forwards;
+    pointer-events: none;
 }
 
-/* MUSIC BUTTON */
-
-.music{
-  position:fixed;
-  right:18px;
-  bottom:22px;
-  z-index:100;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  border:1px solid #ffbdd533;
-  background:#c94f7a55;
-  color:#ffc5d8;
-  font-size:23px;
-  backdrop-filter:blur(10px);
-  box-shadow:0 5px 25px #0005;
-  cursor:pointer;
+@keyframes naik {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 0;
+    }
+    15% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-110vh) rotate(20deg);
+        opacity: 0;
+    }
 }
 
-.scroll{
-  position:absolute;
-  bottom:22px;
-  color:#846071;
-  font-size:10px;
-  letter-spacing:4px;
-}
-
-/* BOUQUET */
-
-.bouquet{
-  position:relative;
-  width:330px;
-  height:390px;
-  margin-top:10px;
-}
-
-.vase{
-  position:absolute;
-  bottom:5px;
-  left:50%;
-  transform:translateX(-50%);
-  width:110px;
-  height:58px;
-  border-radius:12px 12px 30px 30px;
-  background:linear-gradient(90deg,#d86491,#ee87ab,#bd5079);
-  box-shadow:0 10px 25px #0004;
-}
-
-.stem{
-  position:absolute;
-  width:4px;
-  height:185px;
-  bottom:48px;
-  left:50%;
-  background:#78996d;
-  transform-origin:bottom;
-  border-radius:5px;
-}
-
-.stem.a{
-  transform:rotate(-25deg);
-}
-
-.stem.b{
-  transform:rotate(-10deg);
-}
-
-.stem.c{
-  transform:rotate(5deg);
-}
-
-.stem.d{
-  transform:rotate(20deg);
-}
-
-.stem.e{
-  transform:rotate(32deg);
-}
-
-.bloom{
-  position:absolute;
-  font-size:42px;
-  animation:bloom 3s ease-in-out infinite;
-}
-
-@keyframes bloom{
-  50%{
-    transform:translateY(-8px) scale(1.04);
-  }
-}
-
-.b1{
-  left:75px;
-  top:150px;
-}
-
-.b2{
-  left:133px;
-  top:90px;
-  font-size:54px;
-}
-
-.b3{
-  right:65px;
-  top:160px;
-}
-
-.b4{
-  left:105px;
-  top:220px;
-}
-
-.b5{
-  right:40px;
-  top:250px;
-}
-
-.b6{
-  left:35px;
-  top:225px;
-}
-
-/* CARD */
-
-.message-card{
-  width:min(90vw,560px);
-  margin-top:20px;
-  padding:35px 25px;
-  border:1px solid #ffb6cf25;
-  border-radius:25px;
-  background:#ffffff07;
-  box-shadow:0 15px 50px #0003;
-  backdrop-filter:blur(10px);
-}
-
-.quote{
-  font-style:italic;
-  font-size:22px;
-  line-height:1.45;
-  color:#e0b9c7;
-}
-
-/* JAR */
-
-.jar{
-  position:relative;
-  width:150px;
-  height:310px;
-  margin:35px 0 25px;
-  border:2px solid #ef9ab877;
-  border-radius:16px 16px 35px 35px;
-  background:linear-gradient(
-    90deg,
-    #ffffff0c,
-    #ff9abb18,
-    #ffffff08
-  );
-
-  box-shadow:
-    inset 12px 0 25px #fff1,
-    inset -10px 0 20px #0002,
-    0 20px 50px #0005;
-}
-
-.jar:before{
-  content:"";
-  position:absolute;
-  top:-27px;
-  left:50%;
-  transform:translateX(-50%);
-  width:112px;
-  height:38px;
-  border-radius:9px;
-  background:linear-gradient(#ef86a8,#bf557b);
-  border:2px solid #ffb5cb66;
-}
-
-.note{
-  position:absolute;
-  width:40px;
-  height:28px;
-  border-radius:5px;
-  background:#e8b6c9aa;
-  box-shadow:0 2px 8px #0004;
-  animation:noteFloat 3s ease-in-out infinite;
-}
-
-.n1{
-  left:28px;
-  top:75px;
-}
-
-.n2{
-  right:25px;
-  top:120px;
-  animation-delay:.5s;
-}
-
-.n3{
-  left:43px;
-  top:165px;
-  animation-delay:1s;
-}
-
-.n4{
-  right:32px;
-  top:205px;
-  animation-delay:1.5s;
-}
-
-.n5{
-  left:25px;
-  top:245px;
-  animation-delay:2s;
-}
-
-@keyframes noteFloat{
-  50%{
-    transform:translateY(-10px) rotate(5deg);
-  }
-}
-
-.jar-btn{
-  width:270px;
-  border:1px solid #ff9fbe33;
-  background:#d9668d55;
-  border-radius:50px;
-  color:#e9cad4;
-  padding:17px;
-  font:inherit;
-  cursor:pointer;
-}
-
-#result{
-  min-height:80px;
-  max-width:500px;
-  font-family:"Cormorant Garamond",serif;
-  font-size:24px;
-  font-style:italic;
-  color:#dcb3c2;
-  margin-top:18px;
-}
-
-/* FINAL */
-
-.final{
-  min-height:80svh;
-}
-
-.heart{
-  font-size:45px;
-  animation:heart 1.7s infinite;
-}
-
-@keyframes heart{
-  50%{
-    transform:scale(1.16);
-  }
-}
-
-/* FLOATING FLOWERS */
-
-.f1{
-  left:8%;
-  top:18%;
-  font-size:23px;
-}
-
-.f2{
-  right:8%;
-  top:30%;
-  font-size:27px;
-  animation-delay:1s;
-}
-
-.f3{
-  left:18%;
-  top:55%;
-  font-size:19px;
-  animation-delay:2s;
-}
-
-.f4{
-  right:20%;
-  top:72%;
-  font-size:21px;
-  animation-delay:.5s;
-}
-
-.f5{
-  left:7%;
-  top:82%;
-  font-size:18px;
-  animation-delay:1.5s;
-}
-
-@media(max-width:500px){
-
-  h1{
-    font-size:52px;
-  }
-
-  .bouquet{
-    transform:scale(.9);
-    margin-top:-10px;
-    margin-bottom:-20px;
-  }
-
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 </style>
 </head>
 
 <body>
 
-<!-- FLOATING FLOWERS -->
+<div class="container">
+    <div class="card">
 
-<div class="flower f1">🌸</div>
-<div class="flower f2">🌼</div>
-<div class="flower f3">❀</div>
-<div class="flower f4">🌷</div>
-<div class="flower f5">✿</div>
+        <div class="small">A SPECIAL DAY FOR YOU</div>
 
-<!-- MUSIC -->
+        <h1>Happy Birthday</h1>
 
-<button class="music" id="music">♫</button>
+        <h2>Keyshya ❤️</h2>
 
-<!-- OPENING -->
+        <p>
+            Hari ini bukan hari biasa,
+            karena hari ini adalah hari lahir seseorang
+            yang begitu berarti.
+        </p>
 
-<section>
+        <button onclick="bukaSurat()">
+            💌 Buka Surat
+        </button>
 
-  <div class="kicker">
-    🌸 With all my heart 🌸
-  </div>
+        <div class="letter" id="surat">
 
-  <h1>
-    May your life<br>
-    <em>always be filled</em><br>
-    with flowers
-  </h1>
+            <h3>Untuk Keyshya ❤️</h3>
 
-  <p>
-    Happy birthday, <b>KEYSYA WINDIA PUTRI</b>.<br>
-    May your days always be filled with love,
-    happiness, and all the beautiful things you deserve.
-    I am grateful every single day to know you.
-  </p>
+            <p>
+                Selamat ulang tahun, Keyshya.
+                Semoga di umur yang baru ini,
+                semua hal baik datang satu per satu
+                ke dalam hidup kamu.
+            </p>
 
-  <div class="script">
-    — With love that never runs out 💕 —
-  </div>
+            <br>
 
-  <div class="scroll">
-    SCROLL DOWN
-  </div>
+            <p>
+                Semoga kamu selalu diberikan kesehatan,
+                kebahagiaan, dan kekuatan untuk melewati
+                semua hal yang ada di depan.
+            </p>
 
-</section>
+            <br>
 
-<!-- DIGITAL BOUQUET -->
+            <p>
+                Jangan lupa untuk tetap tersenyum,
+                tetap menjadi diri kamu sendiri,
+                dan jangan pernah merasa bahwa kamu
+                sendirian.
+            </p>
 
-<section>
+            <br>
 
-  <div class="kicker">
-    🌸 — MY FIRST GIFT — 🌸
-  </div>
+            <p>
+                Terima kasih sudah menjadi seseorang
+                yang begitu spesial.
+                Semoga hari ini menjadi salah satu
+                hari yang paling indah buat kamu.
+            </p>
 
-  <h2>
-    A Digital Bouquet
-  </h2>
+            <br>
 
-  <p>
-    Each flower holds a little message just for you
-  </p>
+            <p style="text-align:center;">
+                ❤️ Selamat ulang tahun, Keyshya ❤️
+            </p>
 
-  <div class="bouquet">
+        </div>
 
-    <div class="stem a"></div>
-    <div class="stem b"></div>
-    <div class="stem c"></div>
-    <div class="stem d"></div>
-    <div class="stem e"></div>
+        <div class="footer">
+            Made with love ✨
+        </div>
 
-    <div class="bloom b1">🌺</div>
-    <div class="bloom b2">🌸</div>
-    <div class="bloom b3">🌹</div>
-    <div class="bloom b4">🌻</div>
-    <div class="bloom b5">🌷</div>
-    <div class="bloom b6">🌼</div>
-
-    <div class="vase"></div>
-
-  </div>
-
-  <div class="message-card">
-
-    <div class="quote">
-      You are as beautiful as cherry blossoms —
-      lovely and bringing joy wherever you go.
     </div>
-
-  </div>
-
-</section>
-
-<!-- JAR -->
-
-<section>
-
-  <div class="kicker">
-    🌸 — FROM MY HEART TO YOURS — 🌸
-  </div>
-
-  <h2>
-    Reasons I'm Grateful to Know You
-  </h2>
-
-  <p>
-    Shake the jar and pick a note 🫙
-  </p>
-
-  <div class="jar" id="jar">
-
-    <div class="note n1"></div>
-    <div class="note n2"></div>
-    <div class="note n3"></div>
-    <div class="note n4"></div>
-    <div class="note n5"></div>
-
-  </div>
-
-  <button class="jar-btn" onclick="shakeJar()">
-    🫙 Shake the jar
-  </button>
-
-  <div id="result">
-    ...
-  </div>
-
-</section>
-
-<!-- FINAL -->
-
-<section class="final">
-
-  <div class="heart">
-    💗
-  </div>
-
-  <div class="kicker">
-    A little wish for you
-  </div>
-
-  <h2>
-    Keep blooming,<br>
-    KEYSYA.
-  </h2>
-
-  <p>
-    May every dream you have find its way to you.
-    Keep being warm, strong, and beautifully yourself.
-  </p>
-
-  <div class="script">
-    — With all my heart —
-  </div>
-
-</section>
+</div>
 
 <script>
 
-/* JAR */
+function bukaSurat() {
+    const surat = document.getElementById("surat");
 
-const messages=[
-  "Because your smile makes ordinary days feel lighter.",
-  "Because you deserve every beautiful thing life can give.",
-  "Because your presence has a way of making everything feel warmer.",
-  "Because watching you grow is something worth being grateful for.",
-  "Because the world feels a little more beautiful when you're happy.",
-  "Because there are so many reasons to be proud of you."
-];
+    surat.style.display = "block";
 
-function shakeJar(){
-
-  const jar=document.getElementById("jar");
-
-  jar.animate(
-    [
-      {transform:"rotate(0deg)"},
-      {transform:"rotate(-9deg)"},
-      {transform:"rotate(9deg)"},
-      {transform:"rotate(-7deg)"},
-      {transform:"rotate(0deg)"}
-    ],
-    {
-      duration:650,
-      easing:"ease-in-out"
+    for (let i = 0; i < 20; i++) {
+        setTimeout(() => {
+            buatHati();
+        }, i * 150);
     }
-  );
-
-  setTimeout(()=>{
-
-    const i=Math.floor(
-      Math.random()*messages.length
-    );
-
-    document.getElementById("result")
-      .textContent=messages[i];
-
-  },300);
 }
 
+function buatHati() {
+    const heart = document.createElement("div");
 
-/* CINEMATIC BIRTHDAY PIANO */
+    heart.className = "heart";
+    heart.innerHTML = Math.random() > 0.5 ? "❤️" : "💗";
 
-let ctx=null;
-let playing=false;
-let timer=null;
-let musicRunId=0;
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.animationDuration =
+        (4 + Math.random() * 4) + "s";
 
-const bpm=68;
-const beat=60/bpm;
+    document.body.appendChild(heart);
 
-/*
-  Happy Birthday melody
-  dengan nuansa piano cinematic
-*/
-
-const melody=[
-
-  [392,1],
-  [392,1],
-  [440,2],
-
-  [392,2],
-  [523.25,2],
-  [493.88,4],
-
-  [392,1],
-  [392,1],
-  [440,2],
-
-  [392,2],
-  [587.33,2],
-  [523.25,4],
-
-  [392,1],
-  [392,1],
-  [783.99,2],
-
-  [659.25,2],
-  [523.25,2],
-  [493.88,2],
-  [440,4],
-
-  [698.46,1],
-  [698.46,1],
-  [659.25,2],
-
-  [523.25,2],
-  [587.33,2],
-  [523.25,4]
-
-];
-
-
-/* CHORD BACKGROUND */
-
-const chords=[
-
-  [261.63,329.63,392],
-
-  [261.63,329.63,392],
-
-  [293.66,369.99,440],
-
-  [261.63,329.63,392],
-
-  [349.23,440,523.25],
-
-  [329.63,392,493.88]
-
-];
-
-
-/* PIANO SOUND */
-
-function pianoTone(
-  freq,
-  start,
-  duration,
-  volume=0.045
-){
-
-  const o1=ctx.createOscillator();
-  const o2=ctx.createOscillator();
-
-  const g=ctx.createGain();
-
-  const filter=
-    ctx.createBiquadFilter();
-
-
-  o1.type="triangle";
-  o2.type="sine";
-
-  o1.frequency.value=freq;
-  o2.frequency.value=freq*2;
-
-
-  filter.type="lowpass";
-
-  filter.frequency.setValueAtTime(
-    2300,
-    start
-  );
-
-
-  /*
-    Piano-like attack
-  */
-
-  g.gain.setValueAtTime(
-    0.0001,
-    start
-  );
-
-  g.gain.exponentialRampToValueAtTime(
-    volume,
-    start+0.018
-  );
-
-  g.gain.exponentialRampToValueAtTime(
-    volume*0.35,
-    start+duration*0.35
-  );
-
-  g.gain.exponentialRampToValueAtTime(
-    0.0001,
-    start+duration
-  );
-
-
-  o1.connect(filter);
-  o2.connect(filter);
-
-  filter.connect(g);
-  g.connect(ctx.destination);
-
-
-  o1.start(start);
-  o2.start(start);
-
-  o1.stop(
-    start+duration+0.04
-  );
-
-  o2.stop(
-    start+duration+0.04
-  );
-
+    setTimeout(() => {
+        heart.remove();
+    }, 8000);
 }
 
-
-/* CINEMATIC MUSIC */
-
-function playCinematic(runId){
-
-  if(
-    !playing ||
-    runId!==musicRunId
-  ){
-    return;
-  }
-
-
-  const start=
-    ctx.currentTime+0.08;
-
-  let t=0;
-
-
-  /*
-    Main Happy Birthday melody
-  */
-
-  melody.forEach(
-    ([freq,beats])=>{
-
-      pianoTone(
-        freq,
-        start+t*beat,
-        beats*beat*0.94,
-        0.055
-      );
-
-      t+=beats;
-
+setInterval(() => {
+    if (Math.random() > 0.5) {
+        buatHati();
     }
-  );
-
-
-  /*
-    Warm cinematic chord bed
-  */
-
-  for(
-    let i=0;
-    i<Math.ceil(t/4);
-    i++
-  ){
-
-    const chord=
-      chords[i%chords.length];
-
-
-    chord.forEach(
-      (freq,j)=>{
-
-        pianoTone(
-          freq,
-          start+(i*4+j*0.72)*beat,
-          1.8*beat,
-          0.011
-        );
-
-      }
-    );
-
-  }
-
-
-  /*
-    Soft cinematic bass
-  */
-
-  for(
-    let i=0;
-    i<Math.ceil(t/4);
-    i++
-  ){
-
-    const bass=
-      chords[i%chords.length][0]/2;
-
-
-    pianoTone(
-      bass,
-      start+i*4*beat,
-      3.2*beat,
-      0.018
-    );
-
-  }
-
-
-  /*
-    Repeat song
-  */
-
-  timer=setTimeout(
-    ()=>playCinematic(runId),
-    t*beat*1000+1100
-  );
-
-}
-
-
-/* START MUSIC */
-
-function musicStart(){
-
-  if(!ctx){
-
-    ctx=
-      new(
-        window.AudioContext ||
-        window.webkitAudioContext
-      )();
-
-  }
-
-
-  if(
-    ctx.state==="suspended"
-  ){
-    ctx.resume();
-  }
-
-
-  const runId=
-    ++musicRunId;
-
-
-  playCinematic(runId);
-
-}
-
-
-/* MUSIC BUTTON */
-
-document
-  .getElementById("music")
-  .onclick=()=>{
-
-    playing=!playing;
-
-
-    document
-      .getElementById("music")
-      .textContent=
-        playing
-        ? "❚❚"
-        : "♫";
-
-
-    if(playing){
-
-      musicStart();
-
-    }else{
-
-      musicRunId++;
-
-      clearTimeout(timer);
-
-    }
-
-  };
+}, 1500);
 
 </script>
 
 </body>
-  </html>
+</html>
